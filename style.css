@@ -1,0 +1,55 @@
+
+
+* {
+    font-family: 'Times New Roman', Times, serif;   /* Times New Roman till all text. Två typsnitt som fallback. */
+    color: rgb(193, 199, 201);  /* All text ska vara i en grå färg. */
+    background-color: rgb(0, 0, 0); /* Bakgrundfärgen ska vara svart. */
+    margin: 0;  /* Inga margins eller paddings som standard. */
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lucida Bright', 'Times New Roman', Times, serif;  /* Alla rubriker ska ha fonten Lucida Bright om den finns installerad. */
+}
+
+header {
+    display: grid;  /* Använd grid för att dela upp företagets namn och menyn.  */
+    grid-template-columns: 2fr 3fr; /* Kolumnen till företagsnamnet ska vara 2 delar, mendans menyn ska vara 3 delar. */
+    padding: 0.5em 0;   /* Padding uppe och nere ska vara lika med halva textens höjd. */
+    font-size: 3em; /* Texten ska vara 3 gånger större än standardtextstorleken. */
+}
+
+header p {
+    padding: 0 1.5em;   /* Padding vid sidorna om företagsnamnet */
+}
+
+header ul {
+    list-style-type: none;  /* Inga figurer för listobjekten. */
+    display: grid;  /* Använd grid för att dela in menyn. */
+    grid-template-columns: repeat(3, 1fr);  /* Tre kolumner som är en del av den totalka bredden var. "repeat" används för att enkelt kunna andra antalet kolumner. */
+}
+
+header li {
+    font-size: 0.9em;   /* Lite mindre textstorlek i menyn. */
+    border: rgb(193, 199, 201) solid;   /* Gråa heldragna streck mellan objekten. */
+    border-width: 0 0.01ex; /* Ingen ram ovan och under, men 0.01 av bredden av ett x på sidorna. */
+    text-align: center; /* Texten centrerad. */
+}
+
+header li:first-child {
+    border-left: none; /* Första och sista menyobjektet ska inte ha ram på vänster respektive höger sida. */
+}
+
+header li:last-child {
+    border-right: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    padding: 0.5em 0 1em;   /* Större padding under än över. */
+    width: 95vw;    /* Bredden ska vara 95% av fönstret. Anv'nds för att sätta bredden på strecket under rubriken. */
+    border-top: rgb(193, 199, 201) solid 0.05em;    /* Stecket under rubriken. */
+    margin: auto;   /* Objektet mitt på sidan. */
+}
+
