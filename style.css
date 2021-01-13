@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*Tuvas css-fil */
 
 body {
@@ -42,7 +41,8 @@ p.b {
   font-family: "Times New Roman", Times, serif;
   color: rgb(193,199,201);
 }
-=======
+
+
 body {
     font-family: 'Times New Roman', Times, serif;   /* Times New Roman till all text. Två typsnitt som fallback. */
     color: rgb(193, 199, 201);  /* All text ska vara i en grå färg. */
@@ -114,5 +114,3 @@ footer {    /* Oscar */
 footer #opening-hours>p {    /* Oscar */
     margin: 0.3em 0;    /* Lite mindre mellan paragraferna */
 }
-
->>>>>>> parent of 83cebfc... Tagit bort annat
