@@ -1,0 +1,72 @@
+body {
+    font-family: 'Times New Roman', Times, serif;   /* Times New Roman till all text. Två typsnitt som fallback. */
+    color: rgb(193, 199, 201);  /* All text ska vara i en grå färg. */
+    background-color: rgb(0, 0, 0); /* Bakgrundfärgen ska vara svart. */
+    margin: 0;  /* Inga margins. */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lucida Bright', 'Times New Roman', Times, serif;  /* Alla rubriker ska ha fonten Lucida Bright om den finns installerad. */
+}
+
+p {
+    font-size: 1.2em;
+}
+
+header {    /* Oscar */
+    display: grid;  /* Använd grid för att dela upp företagets namn och menyn.  */
+    grid-template-columns: 2fr 3fr; /* Kolumnen till företagsnamnet ska vara 2 delar, mendans menyn ska vara 3 delar. */
+    font-size: 3em; /* Texten ska vara 3 gånger större än standardtextstorleken. */
+    background-color: rgba(127, 127, 127, 0.125); /* Lite ljusare än bakgrunden. */
+}
+
+header h2 {    /* Oscar */
+    padding: 0 1.5em;   /* Padding vid sidorna om företagsnamnet */
+    font-size: 1em;
+}
+
+header ul {    /* Oscar */
+    list-style-type: none;  /* Inga figurer för listobjekten. */
+    display: grid;  /* Använd grid för att dela in menyn. */
+    grid-template-columns: repeat(3, 1fr);  /* Tre kolumner som är en del av den totalka bredden var. "repeat" används för att enkelt kunna andra antalet kolumner. */
+}
+
+header li {    /* Oscar */
+    font-size: 0.9em;   /* Lite mindre textstorlek i menyn. */
+    border: rgb(193, 199, 201) solid;   /* Gråa heldragna streck mellan objekten. */
+    border-width: 0 0.01ex; /* Ingen ram ovan och under, men 0.01 av bredden av ett x på sidorna. */
+    text-align: center; /* Texten centrerad. */
+    transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);    /* Mjukare ändring vid hover. */
+}
+
+header li:hover {    /* Oscar */
+    color: rgb(20, 69, 160);    /* Blå text om hover. */
+}
+
+header li:first-child {    /* Oscar */
+    border-left: none; /* Första och sista menyobjektet ska inte ha ram på vänster respektive höger sida. */
+}
+
+header li:last-child {    /* Oscar */
+    border-right: none;
+}
+
+h1 {    /* Oscar */
+    text-align: center;
+    font-size: 3em;
+    padding: 0.5em 0 1em;   /* Större padding under än över. */
+    width: 95vw;    /* Bredden ska vara 95% av fönstret. Används för att sätta bredden på strecket under rubriken. */
+    margin: auto;   /* Objektet mitt på sidan. */
+}
+
+footer {    /* Oscar */
+    background-color: rgba(127, 127, 127, 0.125);
+    padding: 2em;
+    display: flex;  /* Använd flex för att arangera innehållet. */
+    justify-content: space-evenly;  /* Alla mellnrum ska vara lika stora. */
+}
+
+footer #opening-hours>p {    /* Oscar */
+    margin: 0.3em 0;    /* Lite mindre mellan paragraferna */
+}
+
