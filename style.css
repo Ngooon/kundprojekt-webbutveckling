@@ -44,7 +44,7 @@ header li {    /* Oscar */
 }
 
 header li:hover {    /* Oscar */
-    color:rgb(255, 58, 46);    /* Blå text om hover. */
+    color:rgb(255, 58, 46);    /* Ändra textfärg vid hover. */
 }
 
 header li:first-child {    /* Oscar */
