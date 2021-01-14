@@ -7,17 +7,21 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Lucida Bright', 'Times New Roman', Times, serif;  /* Alla rubriker ska ha fonten Lucida Bright om den finns installerad. */
+    color: rgb(255, 58, 46);
 }
 
 p {
     font-size: 1.2em;
 }
 
-header {    /* Oscar */
+header, footer {    /* Oscar */
+    background-color: rgba(127, 127, 127, 0.125); /* Lite ljusare än bakgrunden. */
+}
+
+header{    /* Oscar */
     display: grid;  /* Använd grid för att dela upp företagets namn och menyn.  */
     grid-template-columns: 2fr 3fr; /* Kolumnen till företagsnamnet ska vara 2 delar, mendans menyn ska vara 3 delar. */
     font-size: 3em; /* Texten ska vara 3 gånger större än standardtextstorleken. */
-    background-color: rgba(127, 127, 127, 0.125); /* Lite ljusare än bakgrunden. */
 }
 
 header h2 {    /* Oscar */
@@ -40,7 +44,7 @@ header li {    /* Oscar */
 }
 
 header li:hover {    /* Oscar */
-    color: rgb(20, 69, 160);    /* Blå text om hover. */
+    color:rgb(255, 58, 46);    /* Ändra textfärg vid hover. */
 }
 
 header li:first-child {    /* Oscar */
@@ -60,7 +64,6 @@ h1 {    /* Oscar */
 }
 
 footer {    /* Oscar */
-    background-color: rgba(127, 127, 127, 0.125);
     padding: 2em;
     display: flex;  /* Använd flex för att arangera innehållet. */
     justify-content: space-evenly;  /* Alla mellnrum ska vara lika stora. */
@@ -68,6 +71,15 @@ footer {    /* Oscar */
 
 footer #opening-hours>p {    /* Oscar */
     margin: 0.3em 0;    /* Lite mindre mellan paragraferna */
+}
+
+.finish-line {  /* Oscar */
+    display: block;
+    height: 5vh;
+    min-height: 2em;
+    width: 100vw;
+    background-image: url(./img/finishline.jpg);
+    background-size: contain;
 }
 
 
@@ -107,4 +119,52 @@ footer #opening-hours>p {    /* Oscar */
     font-family: "Times New Roman", Times, serif;
     color: rgb(193,199,201);
   }
-  
+
+/* Startsida - meny */
+
+main ul {    /* Oscar */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+main ul li {    /* Oscar */
+    margin: 5vh 5vw;
+}
+
+
+[id^=mat]>a {   /* Oscar */
+    width: 30vw;
+    min-width: 360px;
+    height: 30vh;
+    min-height: 150px;
+    background-position: center;
+    background-size: cover;
+    display: block;
+    filter: brightness(100%);
+}
+
+main ul [id^=mat]>a:hover {    /* Oscar */
+    filter: brightness(50%);
+}
+
+[id^=mat] p {    /* Oscar */
+    display: inline-block;
+}
+
+[id^=mat] p:nth-child(2) {    /* Oscar */
+    float: right;
+}
+
+#mat1>a {   /* Oscar */
+    background-image: url(./img/mat1.jpg);
+}
+
+#mat2>a {   /* Oscar */
+    background-image: url(./img/mat2.jpg);
+}
+
+#mat3>a {   /* Oscar */
+    background-image: url(./img/mat3.jpg);
+}
