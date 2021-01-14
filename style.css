@@ -15,10 +15,10 @@ p {
 }
 
 header, footer {    /* Oscar */
-    background-color: rgba(127, 127, 127, 0.1); /* Lite ljusare än bakgrunden. */
+    background-color: rgba(127, 127, 127, 0.125); /* Lite ljusare än bakgrunden. */
 }
 
-header {    /* Oscar */
+header{    /* Oscar */
     display: grid;  /* Använd grid för att dela upp företagets namn och menyn.  */
     grid-template-columns: 2fr 3fr; /* Kolumnen till företagsnamnet ska vara 2 delar, mendans menyn ska vara 3 delar. */
     font-size: 3em; /* Texten ska vara 3 gånger större än standardtextstorleken. */
@@ -71,6 +71,15 @@ footer {    /* Oscar */
 
 footer #opening-hours>p {    /* Oscar */
     margin: 0.3em 0;    /* Lite mindre mellan paragraferna */
+}
+
+.finish-line {  /* Oscar */
+    display: block;
+    height: 5vh;
+    min-height: 2em;
+    width: 100vw;
+    background-image: url(./img/finishline.jpg);
+    background-size: contain;
 }
 
 
