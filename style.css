@@ -78,9 +78,10 @@ footer #opening-hours>p {    /* Oscar */
     height: 5vh;
     min-height: 2em;
     width: 100vw;
-    background-image: url(finishline.jpg);
+    background-image: url(./img/finishline.jpg);
     background-size: contain;
 }
+
 
 /* Om oss-sidan */
 
@@ -97,10 +98,6 @@ footer #opening-hours>p {    /* Oscar */
   .item2-oss {    /* Tuva */
     grid-column: 3 / span 2;
     }
-    .item3-oss {    /* Tuva */
-    grid-column: 3 / span 2;
-    margin-left: 22%;
-    }
   
   .center {    /* Tuva */
       text-align:center;
@@ -113,13 +110,10 @@ footer #opening-hours>p {    /* Oscar */
   h2.a {    /* Tuva */
   font-family: Lucida Bright,serif;
   color: rgb(193,199,201);
-  margin-left: 32%;
   }
-
   h3.a {    /* Tuva */
   font-family: Lucida Bright,serif;
   color: rgb(193,199,201);
-  margin-left: 32%
   }
   p.b {    /* Tuva */
     font-family: "Times New Roman", Times, serif;
@@ -164,42 +158,63 @@ main ul [id^=mat]>a:hover {    /* Oscar */
 }
 
 #mat1>a {   /* Oscar */
-    background-image: url(mat1.jpg);
+    background-image: url(./img/mat1.jpg);
 }
 
 #mat2>a {   /* Oscar */
-    background-image: url(mat2.jpg);
+    background-image: url(./img/mat2.jpg);
 }
 
 #mat3>a {   /* Oscar */
-    background-image: url(mat3.jpg);
+    background-image: url(./img/mat3.jpg);
 }
 
- /*Kontakta oss*/
-  
-#kontakt1{  /* David*/
-  text-align: center; 
-}
-  
-#kontakt2{  /* David*/
-  font-size: 1.2em;
-  text-align: center;
+ /*Kontakta oss*/ 
+
+#kontakt3{	/* David*/
+	font-size: 2em;
+	list-style-type: none;
+	color: rgb(255, 58, 46);
+	text-align: center;
 }
 
-#kontakt3{  /* David*/
-  font-size: 1.5em;
-  list-style-type: none;
-}
-
-iframe{ /* David*/
-  margin-left: 50%;
-  margin-bottom: 3%;
+iframe{	/* David*/
+	margin-left: 43%;
+	margin-bottom: 2%;
   }
   
-ul.innehåll{  /* David*/
-  list-style-type: none;
-  font-size: 1.5em;
-  margin-left:;
-  margin-top: ;
-  line-height:;
+#lista1{	/* David*/
+		font-size: 1.5em;
+		list-style-type: none;
+}
+
+#lista2{	/* David*/
+	font-size: 1.5em;
+	list-style-type: none;
+}
+
+#lista3{	/* David*/
+	font-size: 1.5em;
+	list-style-type: none;
+}
+
+.container{  /* David*/
+	position: relative;
+	text-align: center;
+}
+
+.center{	/* David*/
+	position: absolute;
+	top: 35%;
+	left: 42%;
+	color: rgb(255, 58, 46);
+	font-size: 4em;
+	letter-spacing: -1px;
+	background: rgb(0, 0, 0);
+	background: rgba(0, 0, 0, 0.7);
+	padding: 10px;
+}
+
+main img{ /* David*/
+	width: 30%;
 }
