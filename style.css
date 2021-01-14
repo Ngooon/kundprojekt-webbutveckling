@@ -122,14 +122,14 @@ footer #opening-hours>p {    /* Oscar */
 
 /* Startsida - meny */
 
-ul#meny {    /* Oscar */
+main ul {    /* Oscar */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     list-style-type: none;
 }
 
-ul#meny li {    /* Oscar */
+main ul li {    /* Oscar */
     margin: 5vh 5vw;
 }
 
@@ -145,7 +145,7 @@ ul#meny li {    /* Oscar */
     filter: brightness(100%);
 }
 
-#meny [id^=mat]>a:hover {    /* Oscar */
+main ul [id^=mat]>a:hover {    /* Oscar */
     filter: brightness(50%);
 }
 
