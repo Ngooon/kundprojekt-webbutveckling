@@ -144,6 +144,7 @@ main ul li {    /* Oscar */
     min-width: 360px;
     height: 30vh;
     min-height: 150px;
+    border-radius: 0.2em;
     background-position: center;
     background-size: cover;
     display: block;
