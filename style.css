@@ -174,32 +174,30 @@ main ul [id^=mat]>a:hover {    /* Oscar */
 }
 
 #mat1>a {   /* Oscar */
-    background-image: url(./img/mat1.jpg);  /* Bilden på maten som bakrundsbild i länken. */
+    background-image: url(mat1.jpg);  /* Bilden på maten som bakrundsbild i länken. */
 }
 
 #mat2>a {   /* Oscar */
-    background-image: url(./img/mat2.jpg);
+    background-image: url(mat2.jpg);
 }
 
 #mat3>a {   /* Oscar */
-    background-image: url(./img/mat3.jpg);
+    background-image: url(mat3.jpg);
 }
 
  /*Kontakta oss*/ 
 
 #kontakt3{	/* David*/
-	font-size: 2.5em;
-	list-style-type: none;
-	color: rgb(255, 58, 46);
-	margin-left: 30%;
-	margin-top: 3%;
-	text-decoration: underline;
+	font-size: 2em; /* Större storlek på text */
+	color: rgb(255, 58, 46); /* Textfärgen blir röd */
+	margin-left: 45%; /* position på sidan */
+	text-decoration: underline; /* Underlinje på texten */
 }
 
-p.huvud{	/* David*/
-	font-size: 1.5em;
-	margin-left: 20%;
-	margin-top: 3%;
+.huvud{	/* David*/
+	font-size: 1.5em; /* Större storlek på huvudinnehållet */
+	margin-left: 35%; /* Position på sidan */
+	margin-top: 3%;		/* Position på sidan */
 }
 
 /* Länkar till e-post och telefonnummer. */
@@ -219,28 +217,75 @@ p.huvud{	/* David*/
 }
 
 iframe{	/* David*/
-	margin-left: 60%;
-	margin-bottom: 2%;
+	float: left; /* Iframen ska ligga till vänster */
+	margin-left: 10%; /* Position på sidan */
+	width: 450px; /* Bredd på iframe */
+	height: 350px; /* Längd på iframe */
+	frameborder: 0; /* Gränsen som ska visas runt innehållet i Iframe, 0 är standardvärde */
+	allowfullscreen: false; /* Tillåter iframen att gå till fullskärm */
+	aria-hidden: false; /* Aria ökar tillgängligheten för funktionsnedsatta på nätet, hidden säger till skärmläsaren om de ska ignorera elementet */
+	tabindex: 0;	/* Anger flikordningen för element när "Tab" används för navigation */
   }
   
 
 .container{  /* David*/
-	position: relative;
-	text-align: center;
+	position: relative;/* Position relativt till dess normala position */
+	text-align: center; /* Centrerad text */
 }
 
 .center{	/* David*/
-	position: absolute;
-	top: 35%;
-	left: 43%;
-	color: rgb(255, 58, 46);
-	font-size: 4em;
-	letter-spacing: -1px;
-	background: rgb(0, 0, 0);
-	background: rgba(0, 0, 0, 0.7);
-	padding: 10px;
+	position: absolute; /* Placera något var man vill. Använder top, left, bottom, right för att sätta plats */
+	top: 35%; /* Position för text */
+	left: 43%; /* Position för text */
+	color: rgb(255, 58, 46); /* Textfärg blir röd */
+	font-size: 4em; /* Större storlek på text */
+	letter-spacing: -1px; /* Minskar avståndet mellan karaktärer i text*/
+	background: rgba(0, 0, 0, 0.7); /* Ändrar bakgrundsfärgen bakom texten, gör det enklare att se och läsa*/ 
+	padding: 10px; /*Ökar utrymmet runt texten */
 }
 
-img.bild{ /* David*/
-	width: 25%;
+#bilbild{ /* David*/
+	width: 25%; /* Ökad bredd på bild */
+}
+
+/* Mer Detaljer på Maträtt */
+
+.maträtt-rubrik{	/* David */
+	font-size: 3em;		/* Större storlek på rubrik (3 ggr så stor storlek)*/
+	color: rgb(255, 58, 46); /* Rödtext på rubrik */
+	text-decoration: underline; /* Underlinje på rubrik */
+}
+
+#matbild1{	/* David */
+	margin-left: 20%; /* Position för bild på mat1 */
+}
+
+#matbild2{	/* David */
+	margin-left: 30%; /* Position för bild på mat2 */
+}
+
+#matbild3{	/* David */
+	margin-left: 25%; /* Position för bild på mat3 */
+	width: 50%;	/* Förstorning på bilden */
+}	
+
+.maträtt-text1{ /* David */
+	font-size: 2em; /* Större storlek på typsnittet */
+	color: rgb(255, 58, 46); /* Färg på texten blir röd */
+	text-align: center; /* Centrerad text */
+}
+
+.maträtt-text2{	/* David */
+	font-size: 1.5em; /* Större storlek på typsnitt */
+	text-align: center; /* Centrerad text */
+}
+
+.maträtt-länk{ /* David */
+	padding-left: 45%; /* Position för "Tillbaka till menyn" */
+	color: inherit; /* Samma färg som vanliga texten */
+	font-size: 2em; /* Större storlek på länkens text */
+}
+
+main a:hover{ 
+	color:rgb(255, 58, 46); /* När muspekaren är över texten ändras den gråa färgen till röd */
 }
