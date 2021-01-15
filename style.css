@@ -223,3 +223,19 @@ iframe{	/* David*/
 /* main img{ /* David
 	width: 30%;
 } */
+
+/* Länkar till e-post och telefonnummer. */
+#kontakt a:link,
+#kontakt a:visited {    /* Oscar */
+    color: inherit;
+    text-decoration: none;
+}
+
+#kontakt a:focus,
+#kontakt a:hover {    /* Oscar */
+    color: rgba(193, 199, 201, 0.7);
+}
+
+#kontakt a:active {    /* Oscar */
+    text-decoration: underline; /* Understucken när man klickar på den */
+}
