@@ -141,7 +141,7 @@ main ul li {    /* Oscar */
 
 [id^=mat]>a {   /* Oscar - Alla länkar som är direkt under ett element med ett id som börjar på "mat". */
     width: 30vw;
-    min-width: 360px;  /* BIlderna får inte blir för små. */
+    min-width: 450px;  /* BIlderna får inte blir för små. */
     height: 30vh;
     min-height: 150px;
     border-radius: 0.2em;  /* Lite rundade hörn på bilderna. */
@@ -151,15 +151,26 @@ main ul li {    /* Oscar */
 }
 
 main ul [id^=mat]>a:hover {    /* Oscar */
-    filter: brightness(50%);  /* Gör bilden mörkare vid hover. */
+    filter: brightness(75%);  /* Gör bilden mörkare vid hover. */
 }
 
 [id^=mat] p {    /* Oscar */
     display: inline-block;  /* Namnet och priset ska stå på samma rad. */
+    font-size: 1.5em;
 }
 
 [id^=mat] p:nth-child(2) {    /* Oscar */
+    font-size: 1.5em;
     float: right;  /* Priset till höger */
+}
+
+[id^=mat] {
+    transition: font-size 250ms cubic-bezier(0.075, 0.82, 0.165, 1);    /* Mjukare ändring vid hover. */
+}
+
+[id^=mat]:hover {
+    text-decoration: underline;
+    font-size: 1.2em;
 }
 
 #mat1>a {   /* Oscar */
@@ -167,11 +178,11 @@ main ul [id^=mat]>a:hover {    /* Oscar */
 }
 
 #mat2>a {   /* Oscar */
-    background-image: url(.img/mat2.jpg);
+    background-image: url(./img/mat2.jpg);
 }
 
 #mat3>a {   /* Oscar */
-    background-image: url(.img/mat3.jpg);
+    background-image: url(./img/mat3.jpg);
 }
 
  /*Kontakta oss*/ 
@@ -189,6 +200,22 @@ p.huvud{	/* David*/
 	font-size: 1.5em;
 	margin-left: 20%;
 	margin-top: 3%;
+}
+
+/* Länkar till e-post och telefonnummer. */
+.huvud a:link,
+.huvud a:visited {    /* Oscar */
+    color: inherit;
+    text-decoration: none;
+}
+
+.huvud a:focus,
+.huvud a:hover {    /* Oscar */
+    color: rgba(193, 199, 201, 0.7);
+}
+
+.huvud a:active {    /* Oscar */
+    text-decoration: underline; /* Understucken när man klickar på den */
 }
 
 iframe{	/* David*/
