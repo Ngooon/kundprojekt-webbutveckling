@@ -43,7 +43,12 @@ header li {    /* Oscar */
     transition: color 500ms cubic-bezier(0.075, 0.82, 0.165, 1);    /* Mjukare ändring vid hover. */
 }
 
-header li:hover {    /* Oscar */
+header a {    /* Oscar */
+    color: inherit; /* Samma färg som valig text. */
+    text-decoration: none;  /* Inget understeck under länken. */
+}
+
+header a:hover {    /* Oscar */
     color:rgb(255, 58, 46);    /* Ändra textfärg vid hover. */
 }
 
