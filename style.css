@@ -221,10 +221,6 @@ iframe{	/* David*/
 	margin-left: 10%; /* Position på sidan */
 	width: 450px; /* Bredd på iframe */
 	height: 350px; /* Längd på iframe */
-	frameborder: 0; /* Gränsen som ska visas runt innehållet i Iframe, 0 är standardvärde */
-	allowfullscreen: false; /* Tillåter iframen att gå till fullskärm */
-	aria-hidden: false; /* Aria ökar tillgängligheten för funktionsnedsatta på nätet, hidden säger till skärmläsaren om de ska ignorera elementet */
-	tabindex: 0;	/* Anger flikordningen för element när "Tab" används för navigation */
   }
   
 
@@ -250,10 +246,10 @@ iframe{	/* David*/
 
 /* Mer Detaljer på Maträtt */
 
-.maträtt-rubrik{	/* David */
-	font-size: 3em;		/* Större storlek på rubrik (3 ggr så stor storlek)*/
-	color: rgb(255, 58, 46); /* Rödtext på rubrik */
-	text-decoration: underline; /* Underlinje på rubrik */
+.matrubrik{ /* David*/
+	font-size: 3em; /*Större storlek på rubrik*/
+	color: rgb(255, 58, 46); /* Rödtext på rubrik*/
+	text-decoration: underline; /* Underlinje på rubrik*/
 }
 
 #matbild1{	/* David */
@@ -269,18 +265,18 @@ iframe{	/* David*/
 	width: 50%;	/* Förstorning på bilden */
 }	
 
-.maträtt-text1{ /* David */
-	font-size: 2em; /* Större storlek på typsnittet */
-	color: rgb(255, 58, 46); /* Färg på texten blir röd */
-	text-align: center; /* Centrerad text */
+.mattext1{ /* David*/
+	font-size: 1.5em; /*Större storlek på rubrik*/
+	color: rgb(255, 58, 46); /* Rödtext på rubrik*/
+	text-align: center; /* Underlinje på rubrik*/
 }
 
-.maträtt-text2{	/* David */
+.mattext2{	/* David */
 	font-size: 1.5em; /* Större storlek på typsnitt */
 	text-align: center; /* Centrerad text */
 }
 
-.maträtt-länk{ /* David */
+.matlink{ /* David */
 	padding-left: 45%; /* Position för "Tillbaka till menyn" */
 	color: inherit; /* Samma färg som vanliga texten */
 	font-size: 2em; /* Större storlek på länkens text */
