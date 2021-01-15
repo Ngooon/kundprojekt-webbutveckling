@@ -174,15 +174,15 @@ main ul [id^=mat]>a:hover {    /* Oscar */
 }
 
 #mat1>a {   /* Oscar */
-    background-image: url(mat1.jpg);  /* Bilden på maten som bakrundsbild i länken. */
+    background-image: url(./img/mat1.jpg);  /* Bilden på maten som bakrundsbild i länken. */
 }
 
 #mat2>a {   /* Oscar */
-    background-image: url(mat2.jpg);
+    background-image: url(./img/mat2.jpg);
 }
 
 #mat3>a {   /* Oscar */
-    background-image: url(mat3.jpg);
+    background-image: url(./img/mat3.jpg);
 }
 
  /*Kontakta oss*/ 
