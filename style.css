@@ -139,39 +139,39 @@ main ul li {    /* Oscar */
 }
 
 
-[id^=mat]>a {   /* Oscar */
+[id^=mat]>a {   /* Oscar - Alla länkar som är direkt under ett element med ett id som börjar på "mat". */
     width: 30vw;
-    min-width: 360px;
+    min-width: 360px;  /* BIlderna får inte blir för små. */
     height: 30vh;
     min-height: 150px;
+    border-radius: 0.2em;  /* Lite rundade hörn på bilderna. */
     background-position: center;
     background-size: cover;
     display: block;
-    filter: brightness(100%);
 }
 
 main ul [id^=mat]>a:hover {    /* Oscar */
-    filter: brightness(50%);
+    filter: brightness(50%);  /* Gör bilden mörkare vid hover. */
 }
 
 [id^=mat] p {    /* Oscar */
-    display: inline-block;
+    display: inline-block;  /* Namnet och priset ska stå på samma rad. */
 }
 
 [id^=mat] p:nth-child(2) {    /* Oscar */
-    float: right;
+    float: right;  /* Priset till höger */
 }
 
 #mat1>a {   /* Oscar */
-    background-image: url(mat1.jpg);
+    background-image: url(./img/mat1.jpg);  /* Bilden på maten som bakrundsbild i länken. */
 }
 
 #mat2>a {   /* Oscar */
-    background-image: url(mat2.jpg);
+    background-image: url(.img/mat2.jpg);
 }
 
 #mat3>a {   /* Oscar */
-    background-image: url(mat3.jpg);
+    background-image: url(.img/mat3.jpg);
 }
 
  /*Kontakta oss*/ 
