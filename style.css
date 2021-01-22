@@ -195,13 +195,11 @@ main ul [id^=mat]>a:hover {    /* Oscar */
 #kontakt3{	/* David*/
 	font-size: 2em; /* Större storlek på text */
 	color: rgb(255, 58, 46); /* Textfärgen blir röd */
-	margin-left: 45%; /* position på sidan */
 	text-decoration: underline; /* Underlinje på texten */
 }
 
 .huvud{	/* David*/
 	font-size: 1.5em; /* Större storlek på huvudinnehållet */
-	margin-left: 35%; /* Position på sidan */
 	margin-top: 3%;		/* Position på sidan */
 }
 
@@ -221,9 +219,13 @@ main ul [id^=mat]>a:hover {    /* Oscar */
     text-decoration: underline; /* Understucken när man klickar på den */
 }
 
+.flex-container {   /* Oscar */
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+
 iframe{	/* David*/
-	float: left; /* Iframen ska ligga till vänster */
-	margin-left: 10%; /* Position på sidan */
 	width: 450px; /* Bredd på iframe */
 	height: 350px; /* Längd på iframe */
   }
