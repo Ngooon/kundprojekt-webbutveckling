@@ -235,9 +235,8 @@ iframe{	/* David*/
 }
 
 .center{	/* David*/
-	position: absolute; /* Placera något var man vill. Använder top, left, bottom, right för att sätta plats */
-	top: 35%; /* Position för text */
-	left: 43%; /* Position för text */
+    margin: -200px auto 200px; /* auto för att få den i mitten, -200px för att den ska vara på bilden. 200px för att innehållet nedan inte ska åka upp. */
+    position: relative;
 	color: rgb(255, 58, 46); /* Textfärg blir röd */
 	font-size: 4em; /* Större storlek på text */
 	letter-spacing: -1px; /* Minskar avståndet mellan karaktärer i text*/
@@ -259,10 +258,12 @@ iframe{	/* David*/
 
 #matbild1{	/* David */
 	margin-left: 20%; /* Position för bild på mat1 */
+	width: 60%;	/* Förstorning på bilden */
 }
 
 #matbild2{	/* David */
 	margin-left: 30%; /* Position för bild på mat2 */
+	width: 40%;	/* Förstorning på bilden */
 }
 
 #matbild3{	/* David */
