@@ -83,7 +83,7 @@ footer #opening-hours>p {    /* Oscar */
     height: 5vh;
     min-height: 2em;
     width: 100vw;
-    background-image: url(finishline.jpg);
+    background-image: url(./img/finishline.jpg);
     background-size: contain;
 }
 
@@ -103,7 +103,10 @@ footer #opening-hours>p {    /* Oscar */
   .item2-oss {    /* Tuva */
     grid-column: 3 / span 2;
     }
-  
+    .item3-oss {    /* Tuva */
+        grid-column: 3 / span 2;
+        margin-left: 22%;
+    }
   .center {    /* Tuva */
       text-align:center;
   }
@@ -115,10 +118,12 @@ footer #opening-hours>p {    /* Oscar */
   h2.a {    /* Tuva */
   font-family: Lucida Bright,serif;
   color: rgb(193,199,201);
+  margin-left: 32%;
   }
   h3.a {    /* Tuva */
   font-family: Lucida Bright,serif;
   color: rgb(193,199,201);
+  margin-left: 32%
   }
   p.b {    /* Tuva */
     font-family: "Times New Roman", Times, serif;
@@ -248,8 +253,8 @@ iframe{	/* David*/
 
 .matrubrik{ /* David*/
 	font-size: 3em; /*Större storlek på rubrik*/
-	color: rgb(255, 58, 46); /* Rödtext på rubrik*/
-	text-decoration: underline; /* Underlinje på rubrik*/
+    color: rgb(255, 58, 46); /* Rödtext på rubrik*/
+    text-decoration: underline; /* Underlinje på rubrik*/
 }
 
 #matbild1{	/* David */
